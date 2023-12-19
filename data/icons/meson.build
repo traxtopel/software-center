@@ -1,4 +1,4 @@
-application_id = 'com.github.softwarecenter.json'
+application_id = 'com.github.softwarecenter'
 
 scalable_dir = join_paths('hicolor', 'scalable', 'apps')
 install_data(
@@ -14,7 +14,7 @@ install_data(
 
 
 install_data(
-  join_paths('hicolor', 'com.github.softwarecenter.json.png'),
+  join_paths('hicolor', 'com.github.softwarecenter.png'),
   install_dir: join_paths(get_option('datadir'), 'pixmaps')
 )
 

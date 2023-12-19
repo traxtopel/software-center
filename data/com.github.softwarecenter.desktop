@@ -1,7 +1,7 @@
 [Desktop Entry]
-Name=Arfedora Welcome
+Name=Software Center
 Exec=software-center
-Icon=com.github.softwarecenter.json
+Icon=com.github.softwarecenter
 Terminal=false
 Type=Application
 Categories=GTK;

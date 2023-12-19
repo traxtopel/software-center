@@ -25,8 +25,8 @@ import gi
 from gi.repository import Gtk, GLib, GdkPixbuf, Pango,Gdk
 import threading
 import os
-from arfedora_welcome import utils
-from arfedora_welcome import gui_widgets
+from software_center import utils
+from software_center import gui_widgets
 import uuid
 
 

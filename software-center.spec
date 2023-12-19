@@ -4,7 +4,7 @@ Release:        10%{?dist}
 Summary:        A software center for  Fedora
 License:        GPLv3     
 URL:            https://github.com/traxtopel/software-center
-Source0:        https://github.com/traxtopel/software-center/archive/main.zip
+Source0:        software-center-main.zip 
 BuildArch:      noarch
 BuildRequires:  python3-devel
 BuildRequires:  meson
@@ -46,11 +46,10 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/software-center/software_center/*
 %{_datadir}/pixmaps/*
 %{_datadir}/icons/hicolor/*/apps/*
-%{_datadir}/appdata/com.github.yucefsourani.Arfedorawelcome.appdata.xml
-%{_datadir}/glib-2.0/schemas/com.github.yucefsourani.Arfedorawelcome.gschema.xml
-
-
+%{_datadir}/appdata/com.github.softwarecenter.appdata.xml
+%{_datadir}/glib-2.0/schemas/com.github.softwarecenter.gschema.xml
 
 %changelog
 * Tue Dec 13 2023 traxtopel <traxtopel@gmail.com> 1.0-10
 - Initial fork from arfedora-welcome 1.0-10
+

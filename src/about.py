@@ -2,12 +2,12 @@ from gi.repository import Adw
 from gi.repository import Gtk
 
 avatar_size    = 160
-app_title      = "Arfedora Welcome"
-app_icon_name  = "com.github.yucefsourani.Arfedorawelcome"
+app_title      = "Software Center"
+app_icon_name  = "com.github.softwarecenter"
 dev_name       = "Yucef"
 app_copyright  = "© 2023 yucef"
 app_version    = "1.0"
-app_website    = "https://github.com/yucefsourani/arfedora-welcome"
+app_website    = "https://github.com/traxtopel/software-center"
 app_license    = ("https://www.gnu.org/licenses/gpl-3.0.html","License GPL V3.0")
 license_text   = """
 Copyright (C) 2023  yucef sourani <youssef.m.sourani@gmail.com>

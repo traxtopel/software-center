@@ -1,1 +1,1 @@
-A fork of https://github.com/yucefsourani/arfedora-welcome
+# For Fedora Linux Only 

@@ -23,14 +23,14 @@ import gi
 gi.require_version('Gtk', '4.0')
 gi.require_version('Adw', '1')
 from gi.repository import Gtk, Gio, Adw
-from .window import ArfedoraWelcomeWindow
+from .window import SoftwareCenterWindow
 
 
-class Arfedora_welcomeApplication(Adw.Application):
+class Software_centerApplication(Adw.Application):
     """The main application singleton class."""
 
     def __init__(self):
-        super().__init__(application_id='com.github.softwarecenter.json',
+        super().__init__(application_id='com.github.softwarecenter',
                          flags=Gio.ApplicationFlags.FLAGS_NONE)
 
     def do_activate(self):
@@ -41,12 +41,12 @@ class Arfedora_welcomeApplication(Adw.Application):
         """
         win = self.props.active_window
         if not win:
-            win = ArfedoraWelcomeWindow(application=self)
+            win = SoftwareCenterWindow(application=self)
         win.present()
 
 
 
 def main(version):
     """The application's entry point."""
-    app = Arfedora_welcomeApplication()
+    app = Software_centerApplication()
     return app.run()

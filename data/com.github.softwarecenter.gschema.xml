@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schemalist gettext-domain="software_center">
-	<schema id="com.github.softwarecenter.json" path="/com.github.softwarecenter.json/">
+	<schema id="com.github.softwarecenter" path="/com.github.softwarecenter/">
     <key name="width" type="i">
       <default>640</default>
     </key>

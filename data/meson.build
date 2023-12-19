@@ -1,16 +1,16 @@
 install_data(
-  'com.github.softwarecenter.json.desktop',
+  'com.github.softwarecenter.desktop',
   install_dir: join_paths(get_option('datadir'), 'applications')
 )
 
 
 install_data(
-  'com.github.softwarecenter.json.appdata.xml',
+  'com.github.softwarecenter.appdata.xml',
   install_dir: join_paths(get_option('datadir'), 'appdata')
 )
 
 
-install_data('com.github.softwarecenter.json.gschema.xml',
+install_data('com.github.softwarecenter.gschema.xml',
   install_dir: join_paths(get_option('datadir'), 'glib-2.0/schemas')
 )
 

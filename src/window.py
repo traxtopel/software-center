@@ -27,12 +27,12 @@ import threading
 
 
 
-class ArfedoraWelcomeWindow(Adw.ApplicationWindow):
-    __gtype_name__ = 'ArfedoraWelcomeWindow'
+class SoftwareCenterWindow(Adw.ApplicationWindow):
+    __gtype_name__ = 'SoftwareCenterWindow'
 
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
-        self.set_title("Arfedora Welcome")
+        self.set_title("Software Center")
         self.connect("close-request", self.quit_)
         style_provider = Gtk.CssProvider()
         if (Gtk.get_major_version(), Gtk.get_minor_version()) >= (4, 9):
@@ -42,7 +42,7 @@ class ArfedoraWelcomeWindow(Adw.ApplicationWindow):
         Gtk.StyleContext.add_provider_for_display(Gdk.Display().get_default(),
                                                  style_provider, 
                                                  Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION)
-        self.app_settings = Gio.Settings.new_with_path("com.github.softwarecenter.json","/com.github.softwarecenter.json/")
+        self.app_settings = Gio.Settings.new_with_path("com.github.softwarecenter","/com.github.softwarecenter/")
         self._vte = self.app_settings.get_boolean("vte")
         self.app_settings.bind("width", self, "default-width",
                            Gio.SettingsBindFlags.DEFAULT)
