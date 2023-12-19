@@ -1,9 +1,9 @@
 {
-    "app-id" : "com.github.yucefsourani.Arfedorawelcome",
+    "app-id" : "com.github.softwarecenter.json",
     "runtime" : "org.gnome.Platform",
-    "runtime-version" : "43",
+    "runtime-version" : "42",
     "sdk" : "org.gnome.Sdk",
-    "command" : "arfedora-welcome",
+    "command" : "software-center",
     "finish-args" : [
         "--share=network",
         "--share=ipc",
@@ -24,7 +24,7 @@
     ],
     "modules" : [
         {
-            "name" : "arfedora-welcome",
+            "name" : "software-center",
             "builddir" : true,
             "buildsystem" : "meson",
             "sources" : [
@@ -34,5 +34,8 @@
                 }
             ]
         }
-    ]
+    ],
+    "build-options" : {
+        "env" : {        }
+    }
 }

@@ -43,7 +43,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/applications/*
 %{_datadir}/software-center/plugins/*
 %{_datadir}/software-center/images/*
-%{_datadir}/software-center/arfedora_welcome/*
+%{_datadir}/software-center/software_center/*
 %{_datadir}/pixmaps/*
 %{_datadir}/icons/hicolor/*/apps/*
 %{_datadir}/appdata/com.github.yucefsourani.Arfedorawelcome.appdata.xml

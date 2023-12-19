@@ -1,5 +1,5 @@
-pkgdatadir = join_paths(get_option('prefix'), get_option('datadir'), 'arfedora-welcome')
-moduledir = join_paths(pkgdatadir, 'arfedora_welcome')
+pkgdatadir = join_paths(get_option('prefix'), get_option('datadir'), 'software-center')
+moduledir = join_paths(pkgdatadir, 'software_center')
 
 
 
@@ -11,14 +11,14 @@ conf.set('VERSION', meson.project_version())
 conf.set('pkgdatadir', pkgdatadir)
 
 configure_file(
-  input: 'arfedora-welcome.in',
-  output: 'arfedora-welcome',
+  input: 'software-center.in',
+  output: 'software-center',
   configuration: conf,
   install: true,
   install_dir: get_option('bindir')
 )
 
-arfedora_welcome_sources = [
+software_center_sources = [
   '__init__.py',
   'main.py',
   'window.py',
@@ -30,7 +30,7 @@ arfedora_welcome_sources = [
   'output_page.py'
 ]
 
-install_data(arfedora_welcome_sources, install_dir: moduledir)
+install_data(software_center_sources, install_dir: moduledir)
 
 install_subdir(
       'plugins',

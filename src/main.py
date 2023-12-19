@@ -30,7 +30,7 @@ class Arfedora_welcomeApplication(Adw.Application):
     """The main application singleton class."""
 
     def __init__(self):
-        super().__init__(application_id='com.github.yucefsourani.Arfedorawelcome',
+        super().__init__(application_id='com.github.softwarecenter.json',
                          flags=Gio.ApplicationFlags.FLAGS_NONE)
 
     def do_activate(self):

@@ -21,9 +21,9 @@
 #  MA 02110-1301, USA.
 #  
 #  
-from arfedora_welcome import utils
-from arfedora_welcome.classesplugin import BasePlugin
-from arfedora_welcome.utils import get_uniq_name,write_to_tmp
+from software_center import utils
+from software_center.classesplugin import BasePlugin
+from software_center.utils import get_uniq_name,write_to_tmp
 import subprocess
 
 if_true_skip         = True # skip

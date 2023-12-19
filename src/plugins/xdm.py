@@ -21,11 +21,11 @@
 #  MA 02110-1301, USA.
 #  
 #  
-from arfedora_welcome.classesplugin import BasePlugin
-from arfedora_welcome.utils import get_uniq_name,write_to_tmp,DownloadFile
+from software_center.classesplugin import BasePlugin
+from software_center.utils import get_uniq_name,write_to_tmp,DownloadFile
 import subprocess
 import tempfile
-from arfedora_welcome import gui_widgets
+from software_center import gui_widgets
 import os
                 
 if_true_skip         = False

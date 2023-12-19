@@ -1,16 +1,16 @@
 install_data(
-  'com.github.yucefsourani.Arfedorawelcome.desktop',
+  'com.github.softwarecenter.json.desktop',
   install_dir: join_paths(get_option('datadir'), 'applications')
 )
 
 
 install_data(
-  'com.github.yucefsourani.Arfedorawelcome.appdata.xml',
+  'com.github.softwarecenter.json.appdata.xml',
   install_dir: join_paths(get_option('datadir'), 'appdata')
 )
 
 
-install_data('com.github.yucefsourani.Arfedorawelcome.gschema.xml',
+install_data('com.github.softwarecenter.json.gschema.xml',
   install_dir: join_paths(get_option('datadir'), 'glib-2.0/schemas')
 )
 

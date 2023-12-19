@@ -42,7 +42,7 @@ class ArfedoraWelcomeWindow(Adw.ApplicationWindow):
         Gtk.StyleContext.add_provider_for_display(Gdk.Display().get_default(),
                                                  style_provider, 
                                                  Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION)
-        self.app_settings = Gio.Settings.new_with_path("com.github.yucefsourani.Arfedorawelcome","/com/github/yucefsourani/Arfedorawelcome/")
+        self.app_settings = Gio.Settings.new_with_path("com.github.softwarecenter.json","/com.github.softwarecenter.json/")
         self._vte = self.app_settings.get_boolean("vte")
         self.app_settings.bind("width", self, "default-width",
                            Gio.SettingsBindFlags.DEFAULT)
